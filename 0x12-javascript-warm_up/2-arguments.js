@@ -1,4 +1,3 @@
 #!/usr/bin/node
-console.log('C is fun');
-console.log('Python is cool');
-console.log('JavaScript is amazing');
+const count = process.argv.length;
+console.log(count === 2 ? 'No argument' : count === 3 ? 'Argument found' : 'Arguments found');
